@@ -1,5 +1,5 @@
-import { auth } from "@/lib/auth/client";
-import { UnauthorizedError } from "@/lib/errors";
+import { auth } from "@/lib/auth/client.js";
+import { UnauthorizedError } from "@/lib/errors.js";
 import type { MiddlewareHandler } from "hono";
 
 export const authenticate: MiddlewareHandler = async (c, next) => {

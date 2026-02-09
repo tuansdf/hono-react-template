@@ -1,4 +1,4 @@
-import { isDevelopment } from "@/lib/config/env";
+import { isDevelopment } from "@/lib/config/env.js";
 import { getContext } from "hono/context-storage";
 import pino from "pino";
 

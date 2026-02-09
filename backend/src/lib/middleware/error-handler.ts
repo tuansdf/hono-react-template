@@ -1,10 +1,10 @@
-import { isDevelopment } from "@/lib/config/env";
-import { logger } from "@/lib/logger";
+import { isDevelopment } from "@/lib/config/env.js";
+import { logger } from "@/lib/logger.js";
 import type { ErrorHandler } from "hono";
 import { HTTPException } from "hono/http-exception";
 import type { ContentfulStatusCode } from "hono/utils/http-status";
 import { ZodError } from "zod";
-import { AppError, ValidationError } from "../errors";
+import { AppError, ValidationError } from "../errors.js";
 
 interface ErrorResponse {
   message: string;
