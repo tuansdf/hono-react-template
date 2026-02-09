@@ -1,5 +1,5 @@
-import { env, isDevelopment } from "@/lib/config/env";
-import { db } from "@/lib/db/client";
+import { env, isDevelopment } from "@/lib/config/env.js";
+import { db } from "@/lib/db/client.js";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { admin } from "better-auth/plugins";

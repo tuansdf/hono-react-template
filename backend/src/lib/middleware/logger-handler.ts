@@ -1,4 +1,4 @@
-import { logger } from "@/lib/logger";
+import { logger } from "@/lib/logger.js";
 import type { MiddlewareHandler } from "hono";
 
 export const loggerHandler: MiddlewareHandler = async (c, next) => {

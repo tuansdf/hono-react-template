@@ -1,4 +1,4 @@
-import type { PaginationParams } from "./types";
+import type { PaginationParams } from "./types.js";
 
 export const DEFAULT_PAGE = 1;
 export const DEFAULT_LIMIT = 20;

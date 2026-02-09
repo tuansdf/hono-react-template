@@ -1,6 +1,6 @@
 import type { Context } from "hono";
 import type { ContentfulStatusCode } from "hono/utils/http-status";
-import type { ApiResponse, PaginatedResponse, PaginationMeta } from "./types";
+import type { ApiResponse, PaginatedResponse, PaginationMeta } from "./types.js";
 
 export function success<T>(c: Context, data: T, status: ContentfulStatusCode = 200): Response {
   const response: ApiResponse<T> = { data };

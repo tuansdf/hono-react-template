@@ -4,10 +4,11 @@ const envSchema = z.object({
   NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
   PORT: z.coerce.number().default(5000),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
-  DATABASE_URL: z.string().min(1),
+  DATABASE_URL: z.string().trim().min(1),
   BASE_URL: z.url().min(1),
   CORS_ORIGINS: z
     .string()
+    .trim()
     .min(1)
     .transform((v) => v.split(",")),
 });

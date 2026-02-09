@@ -1,11 +1,11 @@
 import "dotenv/config";
 
-import { auth } from "@/lib/auth/client";
-import { env } from "@/lib/config/env";
-import { errorHandler } from "@/lib/middleware/error-handler";
-import { loggerHandler } from "@/lib/middleware/logger-handler";
-import { notFoundHandler } from "@/lib/middleware/not-found-handler";
-import { routes } from "@/router";
+import { auth } from "@/lib/auth/client.js";
+import { env } from "@/lib/config/env.js";
+import { errorHandler } from "@/lib/middleware/error-handler.js";
+import { loggerHandler } from "@/lib/middleware/logger-handler.js";
+import { notFoundHandler } from "@/lib/middleware/not-found-handler.js";
+import { routes } from "@/router.js";
 import { Hono } from "hono";
 import { rateLimiter } from "hono-rate-limiter";
 import { bodyLimit } from "hono/body-limit";

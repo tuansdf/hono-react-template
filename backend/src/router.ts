@@ -1,4 +1,4 @@
-import { authenticate } from "@/lib/middleware/authenticate";
+import { authenticate } from "@/lib/middleware/authenticate.js";
 import { Hono } from "hono";
 
 export const routes = new Hono();
